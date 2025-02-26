@@ -23,3 +23,15 @@ cycles = {
 for c in cycles:
     val = biorhythm(days_alive, cycles[c])
     print(f'{c} score : {val}' )
+    if val > 0.5:
+        print("Super wynik!")
+    elif val < -0.5:
+        next_val = biorhythm(days_alive+1,cycles[c])
+        if next_val > val:
+            print("Nie martw sie, jutro bedzie lepiej!")
+    else:
+        print("Standardowy wynik")
+
+# c). Zajęło mi około 40 minut razem z powtórką pythona.
+
+# e). DeepSeek natychmiastowo i bez problemu napisał program lepiej ode mnie.
