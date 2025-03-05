@@ -54,8 +54,8 @@ if trafiony:
 ################################################
 
     plt.title("Projectile Motion for the Trebuchet")
-    plt.xlabel("Hieght [m]")
-    plt.ylabel("Distance [m]")
+    plt.xlabel("Distance [m]")
+    plt.ylabel("Hieght [m]")
     plt.legend(loc="upper right")
     plt.grid(True)
     plt.xlim(-5, cel + 50)
